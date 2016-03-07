@@ -3,8 +3,9 @@ FROM centos:6.6
 MAINTAINER Vikas Kumar "vikas@reachvikas.com"
 
 # Set timezone
+ENV TIMEZONE Australia/Sydney
 RUN rm -f /etc/localtime && \
-    ln -s /usr/share/zoneinfo/UTC /etc/localtime
+    ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
 
 # Additional Repos
 RUN yum -y install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm \
