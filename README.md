@@ -13,5 +13,5 @@ Run the below commands to run the container
 ```bash
 docker pull vikas027/centos6-apache2-php5.6
 
-docker run --name <any_name> -d -p <host_http_port>:80 -p <host_https_port>:443 -v <path_of_website_files>:/var/www/html vikas027/centos6-apache2-php5.6
+docker run --name <any_name> -e 'TIMEZONE=Canada/Central' -d -p <host_http_port>:80 -p <host_https_port>:443 -v <path_of_website_files>:/var/www/html vikas027/centos6-apache2-php5.6
 ```
