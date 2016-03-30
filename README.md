@@ -15,5 +15,5 @@ docker pull vikas027/centos-apache-php
 
 OR
 
-docker run --name <any_name> -e 'TIMEZONE=Canada/Central' -e 'ROOT_PASS=secret' -d -p <host_http_port>:80 -p <host_ssh_port>:22 -v <path_of_website_files>:/var/www/html vikas027/centos6-apache-php
+docker run --name <any_name> -e 'TIMEZONE=Canada/Central' -e 'ROOT_PASS=secret' -d -p <host_http_port>:80 -p <host_ssh_port>:22 -v <path_of_website_files>:/var/www/html vikas027/centos-apache-php
 ```
